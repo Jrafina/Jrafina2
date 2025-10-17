@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨文化能力大赛剧本 - Add oil 入词典</title>
+    <style>
+        /* 全局样式重置与基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Heiti SC", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            padding: 30px;
+        }
+        /* 标题样式 */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            font-size: 28px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #2980b9;
+            margin: 30px 0 20px;
+            font-size: 22px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #34495e;
+            margin: 25px 0 15px;
+            font-size: 18px;
+        }
+        /* 角色介绍样式 */
+        .character-list {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .character-item {
+            margin: 12px 0;
+            padding-left: 10px;
+            border-left: 2px solid #3498db;
+        }
+        .character-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        /* 场景样式 */
+        .scene {
+            margin: 30px 0;
+            padding: 25px;
+            background-color: #fafbfc;
+            border-radius: 8px;
+            border-top: 3px solid #3498db;
+        }
+        .scene-intro {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f1f5f9;
+            border-radius: 5px;
+        }
+        /* 台词样式 */
+        .narrator {
+            color: #27ae60;
+            margin: 15px 0;
+            font-weight: 500;
+        }
+        .dialogue {
+            margin: 15px 0;
+            padding: 12px 18px;
+            border-radius: 6px;
+            position: relative;
+        }
+        .zhoujia {
+            background-color: #e3f2fd;
+            border-left: 3px solid #2196f3;
+        }
+        .xuhuan {
+            background-color: #e8f5e9;
+            border-left: 3px solid #4caf50;
+        }
+        .character {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        /* 动作描述样式 */
+        .action {
+            color: #e67e22;
+            font-style: italic;
+            margin: 15px 0;
+            text-align: center;
+            padding: 8px;
+        }
+        /* 语言切换标签 */
+        .lang-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        .lang-tab {
+            padding: 10px 25px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .lang-tab.active {
+            background-color: #2980b9;
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            .lang-tab {
+                padding: 8px 18px;
+                font-size: 14px;
+            }
+            .scene {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题 -->
+        <h1>跨文化能力大赛剧本</h1>
+
+        <!-- 语言切换标签 -->
+        <div class="lang-tabs">
+            <button class="lang-tab active" onclick="switchLang('chinese')">中文版</button>
+            <button class="lang-tab" onclick="switchLang('english')">英文版</button>
+        </div>
+
+        <!-- 中文版内容 -->
+        <div id="chinese" class="lang-content active">
+            <h2>“加油”一词入词典：当汉语词汇与世界互动时</h2>
+
+            <!-- 角色介绍 -->
+            <h3>角色介绍</h3>
+            <div class="character-list">
+                <div class="character-item">
+                    <span class="character">男旁白（由冯饰演）：</span>串联场景，突出跨文化交流的主题
+                </div>
+                <div class="character-item">
+                    <span class="character">周佳（由罗饰演）：</span>英语专业高年级学生，有在词典中标注新单词的习惯
+                </div>
+                <div class="character-item">
+                    <span class="character">徐欢（由丁饰演）：</span>传播学专业高年级学生，经常与周佳分享跨文化故事
+                </div>
+            </div>
+
+            <!-- 场景内容 -->
+            <h3>场景</h3>
+            <div class="scene">
+                <div class="scene-intro">
+                    （场景介绍）课后的一间明亮的大学教室。阳光透过窗户洒了进来。周佳坐在一张书桌前，翻阅着一本泛黄的牛津英语词典。徐欢走过来，手里拿着一个保温杯，然后在她身旁拉过一把椅子坐下。
+                </div>
+
+                <div class="narrator">
+                    （男解说员的声音，清晰而平稳）教室是我们学习语言的地方，但语言本身一直在不断发展——受到外部世界的影响而不断变化。如今，英语词典中发生的一个最有趣的变化正在悄然发生：越来越多源自我们日常生活中的中文词汇被收录其中，默默地讲述着不可阻挡的跨文化交流的故事。
+                </div>
+
+                <div class="action">
+                    （周佳突然轻敲了一下词典的页面，眼睛睁得大大的，然后轻轻推了推徐欢）
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">周佳：</span>欢欢，快看！“加油”这个词就在这儿！定义上写着“用于鼓励某人的短语，尤其是在中文语境中”——还有一个例子：去年我室友跑最后一圈时大喊‘加油！’，我嘲笑我表妹对她的外国朋友这么说，而现在这已经是事实了！
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">徐欢：</span>（凑近了些，惊讶地说道，然后笑了）哇！昨天我在课本里还看到了“红包”这个词。作者写道：“在春节期间，家庭会给孩子发红包，也就是里面装有钱的红色信封。”他们一开始并没有先翻译成“红包”——直接就用了“红包”这个词。
+                </div>
+
+                <div class="narrator">
+                    （男叙述者的声音，温暖而深沉）这些词语并非随意添加的。它们是世界想要了解的中国生活的小片段。曾经，我们在中文里习惯了说“咖啡”或“沙发”；现在，世界开始吸收我们的词汇——因为当人们交流增多时，他们就需要能准确表达真实、具体事物的词汇。
+                </div>
+
+                <div class="action">
+                    （周佳翻到另一页做了标记的页面，指着“饺子”）
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">周佳：</span>看这个！“饺子”不再仅仅是指“中国饺子”了。词典上说“一种半月形的饺子，里面填满了肉或蔬菜，传统上在春节或冬至时食用。”上个月，我来自加拿大的笔友给我发了一张她做的饺子的照片——她是从这本词典中学到这个词的！
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">徐欢：</span>哦，还有“土豪”！我的英语课上周也讲到了这个词。这位教授表示，这个词于 2014 年被收录进《韦氏词典》，其定义为：“指那些近期积累了财富、并且倾向于炫耀性消费的人。”如今，当我们与外国同学谈论这类人时，我们直接说“土豪”——他们一下子就理解了。
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">周佳：</span>十年前，我的老师说我们总得用英语来解释“中国式”的事物。但现在呢？“加油”“红包”“饺子”——它们自己就能解释了。我敢打赌，几年后，我们还会在这里见到“元宵”或“太极”。
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">徐欢：</span>（点头，抿了一口水）确实如此！不再只是我们向他们学习了——而是双方都在相互学习。比如，我们用“直播”这个词来自英语，但他们用“直播电商”这个词，因为它是从这里开始的。这就是沟通应有的样子吧？分享话语，分享生活。
+                </div>
+
+                <div class="narrator">
+                    （男声解说员的声音，温和而富有结束意味）每当一名外国学生学会用“加油”来鼓励朋友，每当一位厨师在餐厅菜单上写下“饺子”，每当一则新闻报道提到“红包”——这些平凡的日常场景让我们的语言成为了世界语言的一部分。英语词典中的每一个汉字都是一座桥梁——它将我们的故事与世界连接起来，也将世界的好奇与我们联系在一起。
+                </div>
+
+                <div class="action">
+                    （动作）（周佳再次打开词典，指着“加油”一词为徐欢拍照。两人微笑，阳光洒在书页上。画面渐渐消失。）
+                </div>
+
+                <div class="action">（结束）</div>
+            </div>
+        </div>
+
+        <!-- 英文版内容 -->
+        <div id="english" class="lang-content">
+            <h2>"Add oil" enters dictionary: When Chinese words interact with the world</h2>
+
+            <!-- 角色介绍 -->
+            <h3>Character Introduction</h3>
+            <div class="character-list">
+                <div class="character-item">
+                    <span class="character">Male Narrator (performed by Feng):</span> Links scenes and highlights the theme of cross-cultural communication
+                </div>
+                <div class="character-item">
+                    <span class="character">Zhou Jia (performed by Luo):</span> Senior majoring in English, has a habit of marking new words in dictionaries
+                </div>
+                <div class="character-item">
+                    <span class="character">Xu Huan (performed by Ding):</span> Senior majoring in Communications, often shares cross-cultural stories with Zhou Jia
+                </div>
+            </div>
+
+            <!-- 场景内容 -->
+            <h3>Scene</h3>
+            <div class="scene">
+                <div class="scene-intro">
+                    (Scene Introduction) A bright university classroom after class. Sunlight streams through the windows. Zhou Jia sits at a desk, flipping through a dog-eared Oxford English Dictionary. Xu Huan walks over, holding a thermos, and pulls up a chair beside her.
+                </div>
+
+                <div class="narrator">
+                    (Male Narrator’s voice, clear and steady) Classrooms are where we learn languages, but language itself is always growing—shaped by the world outside. These days, one of the most interesting changes is happening in English dictionaries: more Chinese words, born from our daily lives, are being written into them, quietly telling the story of unstoppable cross-cultural communication.
+                </div>
+
+                <div class="action">
+                    (Zhou Jia suddenly taps the dictionary page, eyes wide, and nudges Xu Huan)
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">Zhou Jia:</span> Huanhuan, quick look! "Add oil" is in here! The definition says "a phrase used to encourage someone, especially in Chinese contexts"—and there’s an example: "My roommate shouted ‘add oil!’ as I ran the final lap." I still laughed at my cousin for saying this to her foreign friend last year, and now it’s official!
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">Xu Huan:</span> (leans in, surprised, then laughs) Wow! I saw "hongbao" in my textbook yesterday too. The author wrote, "During Chinese New Year, families give hongbao to children, which are red envelopes with money inside." They didn’t even translate it as "red envelope" first—just used "hongbao" directly.
+                </div>
+
+                <div class="narrator">
+                    (Male Narrator’s voice, warm and reflective) These words aren’t random additions. They’re little pieces of Chinese life that the world wants to understand. Once, we got used to saying "coffee" or "sofa" in Chinese; now, the world is picking up our words—because when people talk more, they need words that fit the real, specific things they share.
+                </div>
+
+                <div class="action">
+                    (Zhou Jia flips to another marked page, pointing to "jiaozi")
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">Zhou Jia:</span> Look at this one! "Jiaozi" isn’t just "Chinese dumpling" anymore. The dictionary says "a crescent-shaped dumpling filled with meat or vegetables, traditionally eaten at Chinese New Year or Winter Solstice." Last month, my pen pal from Canada sent me a photo of the jiaozi she made—she learned the word from this dictionary!
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">Xu Huan:</span> Oh, and "tuhao"! My communications class talked about it last week. The professor said it was added to Merriam-Webster in 2014, defined as "a person who has recently acquired wealth and tends to spend it ostentatiously." Now when we talk about that kind of people with foreign classmates, we just say "tuhao"—they get it right away.
+                </div>
+
+                <div class="dialogue zhoujia">
+                    <span class="character">Zhou Jia:</span> Ten years ago, my teacher said we’d always have to explain "Chinese-style" things in English. But now? "Add oil," "hongbao," "jiaozi"—they’re doing the explaining themselves. I bet in a few years, we’ll see "yuanxiao" or "tai chi" here too.
+                </div>
+
+                <div class="dialogue xuhuan">
+                    <span class="character">Xu Huan:</span> (nods, taking a sip of water) Exactly! It’s not just us learning from them anymore—it’s both ways. Like, we use "live-streaming" from English, but they use "live-streaming e-commerce" because it started here. That’s what communication should be, right? Sharing words, sharing life.
+                </div>
+
+                <div class="narrator">
+                    (Male Narrator’s voice, gentle and concluding) Every time a foreign student learns to say "add oil" to cheer a friend, every time a chef writes "jiaozi" on a restaurant menu, every time a news story mentions "hongbao"—these small, everyday moments make our words part of the world’s language. Every Chinese word in an English dictionary is a bridge—one that connects our stories to the world and the world’s curiosity to us.
+                </div>
+
+                <div class="action">
+                    (Movement) (Zhou Jia opens the dictionary again, pointing to the "add oil" entry for Xu Huan to take a photo. The two smile, as sunlight falls on the page. The scene fades out.)
+                </div>
+
+                <div class="action">(End)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 语言切换脚本 -->
+    <script>
+        function switchLang(lang) {
+            // 隐藏所有语言内容
+            document.querySelectorAll('.lang-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            // 移除所有标签的活跃状态
+            document.querySelectorAll('.lang-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // 显示选中的语言内容和标签
+            document.getElementById(lang).classList.add('active');
+            document.querySelector(`.lang-tab[onclick="switchLang('${lang}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>
